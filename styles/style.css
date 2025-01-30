@@ -1,0 +1,165 @@
+/* Arquivo de estilo do projeto */
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --cor-primaria: #F0C040;
+    --cor-secundaria: #f6f6f6;
+    --cor-terciaria: #F0731B;
+    --cor-hover: #F0AC41;
+    
+    --fonte-titulo: 'Krona One', sans-serif;
+    --fonte-texto: 'Montserrat', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    /* height: 100vh; */
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+}
+
+.cabecalho {
+    padding: 2% 0% 0% 15%;
+}
+
+.cabecalho__menu {
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalho__menu__link{
+    font-family: var(--fonte-texto);
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--cor-secundaria);
+    text-decoration: none;
+}
+
+.apresentacao{
+    margin: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.apresentacao__conteudo{
+    width: 600px;
+    display: flex;
+    flex-direction: column; /*faz com os elementos fiquem em coluna e não linha/row */
+    gap: 40px; /* Espaçamento entre os elementos */
+}
+
+.apresentacao__conteudo__s {
+    margin: 5% 0;
+    display: flex; /* Usa Flexbox */
+    gap: 40px;     /* Espaçamento entre texto e imagem */
+    justify-content: space-between; /* Distribui espaço entre os itens */ /* Distribui espaço entre os itens */
+    align-items: flex-start;       /* Alinha itens verticalmente no início */
+}
+  
+
+.apresentacao__conteudo__titulo{
+    font-size: 36px;
+    font-family: var(--fonte-titulo);
+}
+
+.titulo-destaque {
+    color: var(--cor-terciaria);
+}
+
+.apresentacao__conteudo__titulo__s {
+    font-size: 30px;
+    font-family: var(--fonte-titulo);
+}
+
+.apresentacao__conteudo__s__texto{
+    flex: 1; /* Permite o texto ocupar o espaço restante */
+    display: flex; /*Alinha o texto na vertical*/
+    flex-direction: column;
+    gap: 24px;
+}
+
+.apresentacao__conteudo__s__texto_s {
+    font-size: 22px;
+    font-family: var(--fonte-texto);
+    font-weight: 400;
+}
+
+.apresentacao__conteudo__texto__destaque {
+    color: var(--cor-terciaria);
+}
+
+.apresentacao__links{
+    display: flex;
+    justify-content: space-between;
+}
+
+.apresentacao__links__subtitulo{
+    font-family: var(--fonte-titulo);
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.apresentacao__links__link{
+    /* background-color: #F0731B; */
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    border: var(--cor-terciaria) 2px solid;
+    width: 378px;
+    text-align: center;
+    border-radius: 8px; /* Deixa as bordas arredondadas */
+    font-size: 24px;
+    font-weight: 600; /* Deixa o texto em negrito */
+    padding: 21.5px 0; /* 21.5px de padding em cima e em baixo e 0 nas laterais */
+    margin: 1%;
+    text-decoration: none; /* Remove o sublinhado do link */
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-texto);
+}
+
+.apresentacao__links__link:hover{
+    cursor: pointer;
+    background-color: var(--cor-hover);
+}
+
+.apresentacao{
+    display: flex;
+    justify-content:left;
+}
+
+.apresentacao__imagem{
+    width: 488px;
+    height: 550px;
+    border-radius: 16px; /* Deixa a imagem redonda */
+    padding: 21.5 0; /* 25px de padding em cima e em baixo e 0 nas laterais */;
+}
+
+.apresentacao__imagem__about{
+    width: 420px;
+    height: 370px;
+    border-radius: 50px; /* Deixa a imagem redonda */
+    padding: 21.5 0;
+}
+
+.apresentacao__conteudo__s__imagem__s{
+    width: 300px; /*Largura da imagem*/
+    height: auto; /*Ajusta a altura automaticamente mantendo proporção*/
+    border-radius: 50px;
+    padding: 21.5px 0;
+}
+
+.rodape{
+    padding: 24px;
+    color: var(--cor-terciaria);
+    background-color: var(--cor-secundaria);
+    text-align: center;
+    font-family: var(--fonte-texto);
+    font-size: 24px;
+    font-weight: 400;
+}
